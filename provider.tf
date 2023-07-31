@@ -10,9 +10,7 @@ terraform {
     required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.28.0"
-      access_key = "${var.AWS_ACCESS_KEY}"
-      secret_key = "${var.AWS_KEY_SECRET}"
+      version = "~> 3.28.0"      
     }
   }
 
@@ -23,4 +21,6 @@ terraform {
 
 provider "aws" {
     region= "us-west-2"
+    # access_key = "${var.AWS_ACCESS_KEY}"
+    # secret_key = "${var.AWS_KEY_SECRET}"
 }
